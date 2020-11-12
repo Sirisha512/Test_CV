@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom right, rgb(73, 73, 201), rgb(255, 255, 255));
+}
+
+.resume{
+    width: 800px;
+    background: rgb(252, 251, 253);
+    margin:25px auto;
+    display: flex;
+}
+
+.left{
+    background: rgb(127, 127, 221);
+    width: 250px;
+    padding: 0 20px;
+}
+
+.right{
+    width: calc(100% - 250px);
+}
+
+.left .img_holder{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.left .img_holder img{
+    width: 200px;
+    border-radius: 30px;
+}
+
+.pb{
+    padding-bottom: 20px;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    color:  rgb(47, 5, 75);
+    position: relative;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.title::before{
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 50px;
+    height: 3px;
+    background: rgb(47, 5, 75);
+}
+
+.left .icon{
+    font-size: 20px;
+    color: rgb(47, 5, 75);
+}
+
+.left .text{
+    color: black;
+    font-size: 13px;
+}
+
+.contact .li_wrap{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .li_wrap .icon{
+    width: 40px;
+    height: 50px;
+    background: cross-fade();
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.contact .li_wrap .text{
+    width: calc(100% - 40px);
+    word-break: break-word;
+    color:  rgb(47, 5, 75)
+}
+
+.skills ul,
+.hobbies ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.skills .li_wrap,
+.hobbies .li_wrap{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    
+}
+
+.skills .li_wrap{
+    background: rgb(240, 236, 247);
+}
+
+.skills .li_wrap .text,
+.hobbies .li_wrap .text{
+    margin-top: 5px;
+    color: black;
+}
+
+.skills .li_wrap:hover{
+    background: rgb(123, 123, 231);
+    
+}
+
+.hobbies .li_wrap:hover{
+    background: rgb(235, 235, 241);
+}
+
+.header{
+    background:  rgb(160, 160, 250);
+    padding: 15px 30px;
+    color: white;
+    height: 250px;
+}
+
+.header .name{
+    font-size: 36px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: rgb(47, 5, 75);
+}
+
+.header .role{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.header .about{
+    margin-top: 20px;
+    line-height: 26px;
+}
+
+.right_inner{
+    padding: 30px;
+}
+
+.right_inner .education{
+    margin-top: 30px;
+}
+
+.right_inner .li_wrap{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.right_inner .li_wrap .date{
+    width: 125px;
+    color: blueviolet;
+}
+
+.right_inner .li_wrap .info{
+    width: calc(100% - 125px);
+    padding-left: 25px;
+    position: relative;
+}
+
+
+.right_inner .li_wrap .info_title{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: blueviolet;
+}
+
+.right_inner .li_wrap .info_com{
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 3px;
+    color: blueviolet;
+}
+
+.right_inner .li_wrap .info_cont{
+    margin-top: 10px;
+}
+
+.right_inner .li_wrap .info:before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background:  rgb(47, 5, 75);
+    border-radius: 50%;
+}
+
+.right_inner .li_wrap .info::after{
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 4;
+    width: 2px;
+    height: calc(100% - 10px);
+    background:  rgb(47, 5, 75);
+    
+}
